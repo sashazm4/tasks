@@ -1,0 +1,21 @@
+from random import randint
+from datetime import datetime
+
+# Часть 1. Вычисление и печать набора ключей в виде битовой последовательности
+for i in range (3, 13):
+    print(2 ** i, end="-bit sequence: ")
+    print(2 ** (2 ** i))
+
+# Часть 2. Генерация и печать случайного шестнадцатеричного значения в зависимости от текущей длиным и нахолждение времени его поиска 
+for test_length in range (3, 10):
+    
+    print("Random key of length ", end = "")
+    print(test_length, end = ": ")
+    random_key = hex(randint(16  ** (test_length - 1), 16 ** test_length -1))
+    print(random_key)
+    start_time = datetime.now()
+    for runner in range (16 ** (test_length - 1), 16 ** test_length):
+        if hex(runner) == random_key:
+            print("Execution time: ", end = "")
+            print((datetime.now() - start_time).microseconds / 1000)
+    
