@@ -1,11 +1,12 @@
+
 import math
 from random import randint
 from datetime import datetime
 
 # Часть 1. Вычисление и печать набора ключей в виде битовой последовательности
-for i in range (3, 13):
-    print(2 ** i, end="-bit sequence: ")
-    print(2 ** (2 ** i))
+for length in range (3, 13):
+    print(2 ** lentgh, end="-bit sequence: ")
+    print(2 ** (2 ** length))
 
 # Часть 2. Генерация и печать случайного шестнадцатеричного значения в зависимости от текущей длиным и нахолждение времени его поиска 
 for test_length in range (3, 10):
