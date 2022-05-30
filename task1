@@ -5,7 +5,7 @@ from datetime import datetime
 
 # Часть 1. Вычисление и печать набора ключей в виде битовой последовательности
 for length in range (3, 13):
-    print(2 ** lentgh, end="-bit sequence: ")
+    print(2 ** length, end="-bit sequence: ")
     print(2 ** (2 ** length))
 
 # Часть 2. Генерация и печать случайного шестнадцатеричного значения в зависимости от текущей длиным и нахолждение времени его поиска 
