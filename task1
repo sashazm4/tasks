@@ -28,4 +28,3 @@ for test_length in range (3, 10):
         if hex(runner) == rand_hex_key:
             print("Execution time: ", end = "")
             print((datetime.now() - start_time).microseconds / 1000 + (datetime.now() - start_time).seconds * 1000, end = "ms")
-    
